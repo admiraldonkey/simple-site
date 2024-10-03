@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  /* width: 100vh; */
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  width: 100vh;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.image-container {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-first {
+  background-image: url("./assets/south-africa1.jpg");
+}
+
+.image-second {
+  background-image: url("./assets/south-africa2.jpg");
+}
+
+.image-third {
+  background-image: url("./assets/vineyard.jpg");
+}
+
+.hero-content {
+  position: absolute;
+  left: 100px;
+  bottom: 300px;
+  color: white;
+}
