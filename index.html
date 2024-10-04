@@ -10,26 +10,29 @@
   <body>
     <header>
       <nav>
-        <h1>South Africa</h1>
+        <div class="nav-left">
+          <!-- <img src="./assets/africa-flag.png" class="logo" /> -->
+          <h1>South Africa</h1>
+        </div>
         <ul>
-          <li>Home</li>
-          <li>Landscapes</li>
-          <li>Animals</li>
-          <li>Wine</li>
-          <li>Safaris</li>
-          <li>Travel</li>
+          <li><a class="nav-link" href="#landscapes">Home</a></li>
+          <li><a class="nav-link" href="#landscapes">Landscapes</a></li>
+          <li><a class="nav-link" href="#animals">Animals</a></li>
+          <li><a class="nav-link" href="#wine">Wine</a></li>
+          <li><a class="nav-link" href="#safaris">Safaris</a></li>
+          <li><a class="nav-link" href="#travel">Travel</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="image-container image-first">
+      <div class="image-container image-first" id="landscapes">
         <div class="hero-content">
           <h2>See The Sights!</h2>
           <h1>Jaw Dropping Vistas</h1>
           <button>Check Out More!</button>
         </div>
       </div>
-      <div class="image-container image-second">
+      <div class="image-container image-second" id="animals">
         <div class="hero-content">
           <h2>See The Infamous 'Big 5'</h2>
           <h1>Incredible Animals</h1>
@@ -43,7 +46,7 @@
           </p>
         </div>
       </div>
-      <div class="image-container image-third">
+      <div class="image-container image-third" id="wine">
         <div class="hero-content">
           <h2>A Vineyard With A View</h2>
           <h1>Wine</h1>
@@ -51,6 +54,8 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <p>Yarr! This be a footer!</p>
+    </footer>
   </body>
 </html>

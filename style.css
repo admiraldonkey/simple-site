@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   position: fixed;
   width: 100vw;
@@ -10,9 +14,14 @@ header {
 
 nav {
   display: flex;
-  /* width: 100vh; */
-  justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    80%,
+    rgba(0, 0, 0, 0)
+  );
   color: white;
   font-weight: bold;
 }
@@ -20,8 +29,41 @@ nav {
 ul {
   display: flex;
   width: 100vh;
-  justify-content: space-evenly;
+  justify-content: space-around;
   list-style-type: none;
+}
+
+nav h1 {
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-family: Garamond, serif;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  width: 40%;
+  margin-right: 40px;
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 5px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-shadow: 1px 1px 2px black;
 }
 
 body {
@@ -36,6 +78,7 @@ body {
   position: relative;
   background-position: center;
   background-size: cover;
+  font-family: sans-serif;
 }
 
 .image-first {
@@ -54,5 +97,25 @@ body {
   position: absolute;
   left: 100px;
   bottom: 300px;
+  color: white;
+}
+
+footer {
+  /* background: linear-gradient(
+    to bottom,
+    rgba(94, 127, 21, 0.6),
+    20%,
+    rgba(247, 221, 166, 1)
+  ); */
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  margin: 0;
   color: white;
 }
