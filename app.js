@@ -38,10 +38,8 @@ const closeAnimalPopup = document.getElementById("animal-close");
 
 animalsButton.addEventListener("click", function () {
   animalPopup.classList.remove("hidden");
-  console.log("Code ran");
 });
 
 closeAnimalPopup.addEventListener("click", function () {
   animalPopup.classList.add("hidden");
-  console.log("this ran too!");
 });

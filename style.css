@@ -101,10 +101,6 @@ body {
   background-image: url("./assets/south-africa2.jpg");
 }
 
-/* #animals {
-  position: relative;
-} */
-
 .popup {
   position: fixed;
   height: 80vh;
@@ -116,11 +112,18 @@ body {
   border-radius: 20px;
   z-index: 5;
 }
+
 .popup-content {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
-.popup p {
-  margin-left: 40px;
+
+.popup-content p {
+  font-size: 24px;
 }
 
 .close {
@@ -132,17 +135,13 @@ body {
   font-size: 30px;
 }
 
-.animal-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+.close:hover {
+  cursor: pointer;
 }
 
 .big5 {
-  display: flex;
-  /* align-items: center;
-  justify-content: center; */
+  max-width: 90%;
+  height: auto;
 }
 
 .image-third {
@@ -192,6 +191,7 @@ body {
 
 .hero-content button:hover {
   box-shadow: 0 0 20px white;
+  cursor: pointer;
 }
 
 #back-to-top {
@@ -213,14 +213,8 @@ body {
 }
 
 footer {
-  /* background: linear-gradient(
-    to bottom,
-    rgba(94, 127, 21, 0.6),
-    20%,
-    rgba(247, 221, 166, 1)
-  ); */
   background-color: black;
-  height: 50px;
+  height: 60px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -230,6 +224,11 @@ footer {
 footer p {
   margin: 0;
   color: white;
-  width: 100vw;
+  width: 50vw;
   z-index: 1;
+  font-size: 20px;
+}
+
+footer img {
+  margin: 0px 10px;
 }
