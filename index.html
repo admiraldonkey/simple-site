@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Space Y</title>
+    <title>South Africa</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/africa-flag-icon.png" />
     <script src="./app.js" defer></script>
   </head>
   <body>
@@ -15,9 +16,9 @@
           <h1>South Africa</h1>
         </div>
         <ul>
-          <li><a class="nav-link" href="#landscapes">Home</a></li>
+          <li><a class="nav-link" href="#home">Home</a></li>
           <li><a class="nav-link" href="#landscapes">Landscapes</a></li>
-          <li><a class="nav-link" href="#animals">Animals</a></li>
+          <li><a class="nav-link" href="#animals">Wildlife</a></li>
           <li><a class="nav-link" href="#wine">Wine</a></li>
           <li><a class="nav-link" href="#safaris">Safaris</a></li>
           <li><a class="nav-link" href="#travel">Travel</a></li>
@@ -25,33 +26,75 @@
       </nav>
     </header>
     <main>
+      <div class="image-container image-home" id="home">
+        <div class="hero-content" id="hero-1">
+          <h2>It's A Magical Place</h2>
+          <h1>A World Of Wonder</h1>
+          <a
+            href="https://www.southafrica.net/uk/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><button id="landscape-button">Check It Out Now!</button></a
+          >
+        </div>
+      </div>
       <div class="image-container image-first" id="landscapes">
         <div class="hero-content">
-          <h2>See The Sights!</h2>
+          <h2>Marvel At The Natural Beauty</h2>
           <h1>Jaw Dropping Vistas</h1>
-          <button>Check Out More!</button>
+          <button>Check It Out Now!</button>
         </div>
       </div>
       <div class="image-container image-second" id="animals">
         <div class="hero-content">
           <h2>See The Infamous 'Big 5'</h2>
           <h1>Incredible Animals</h1>
-          <button>Check Out More!</button>
+          <button id="btn-animals">Check Out More!</button>
           <!-- Add the below to above button controlled pop-up or perhaps a hover-activated tooltip -->
-          <p>
-            South Africa is home to some of Earth's most impressive fauna,
-            including the largest, tallest and fastest animals on the planet
-            (both overall and land-based). They also have penguins. Wait,
-            <em>what?!</em> Yeah, you read that right - penguins!
-          </p>
+          <div class="popup hidden" id="animal-popup">
+            <div class="popup-content">
+              <h3 class="close" id="animal-close">X</h3>
+              <div class="animal-info">
+                <img
+                  class="big5"
+                  src="./assets/Big-five.jpg"
+                  alt="A picture showing South Africa's 'Big 5' animals"
+                />
+                <p>
+                  South Africa is home to some of Earth's most impressive
+                  creatures, including the largest, tallest and fastest animals
+                  on the planet (both overall and land-based). They also have
+                  penguins. Wait,
+                  <em>what?!</em> Yeah, you read that right - penguins!
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="image-container image-third" id="wine">
         <div class="hero-content">
           <h2>A Vineyard With A View</h2>
-          <h1>Wine</h1>
-          <button>Have A Taste...</button>
+          <h1>World Famous Wines</h1>
+          <button>Go On... Have A Taste!</button>
         </div>
+      </div>
+      <div class="image-container image-fourth" id="safaris">
+        <div class="hero-content">
+          <h2>Get Closer To Nature</h2>
+          <h1>Unforgettable Adventures</h1>
+          <button>Book A Safari</button>
+        </div>
+      </div>
+      <div class="image-container image-fifth" id="travel">
+        <div class="hero-content">
+          <h2>Travel & Accommodation</h2>
+          <h1>Book Your Trip Of A Lifetime</h1>
+          <button>Alternatives To Swimming</button>
+        </div>
+        <a id="back-to-top" class="hidden" href="#home"
+          ><img src="./assets/up-arrow.png"
+        /></a>
       </div>
     </main>
     <footer>
