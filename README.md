@@ -1,5 +1,9 @@
 # South Africa
 
+## About
+
+Software Development Bootcamp - Week 1 project
+
 ## What requirements did you achieve?
 
 All of them, as far as I can tell!
