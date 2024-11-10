@@ -1,8 +1,6 @@
 # South Africa
 
-## About
-
-Software Development Bootcamp - Week 1 project
+Software Development Bootcamp - Week 1 Project - A simple webpage about South Africa.
 
 ## What requirements did you achieve?
 
